@@ -1,0 +1,51 @@
+:root {
+    --primary-solid: #242424;
+    --primary-700: rgba(36, 36, 36, 0.7);
+    --dark-bg-color: #000000;
+    --console-font-color: #D0CFCC;
+
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--dark-bg-color);
+    font-size: 1.1rem;
+    margin: 0;
+
+}
+
+header {
+    background-color: var(--primary-solid);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    height: 4.5vh;
+    min-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+header>p {
+    padding-top: 0.7vh;
+    margin: 0;
+}
+
+.console {
+    margin: 0 2vw 0 2vw;
+    margin-top: 2vh;
+}
+
+.console-text {
+    color: var(--console-font-color);
+}
+
+.console-user {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
