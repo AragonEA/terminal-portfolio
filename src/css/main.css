@@ -1,3 +1,6 @@
+@import url('./cursorAnimation.css');
+@import url('./modal.css');
+
 :root {
     --primary-solid: #242424;
     --primary-700: rgba(36, 36, 36, 0.7);
@@ -43,9 +46,53 @@ header>p {
     font-weight: bold;
 }
 
+#name-small {
+    display: none;
+}
+
+#tux {
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
 
 footer {
     position: fixed;
     bottom: 0;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+
+    .cursor {
+        display: none !important;
+    }
+
+    #name-big {
+        display: none;
+    }
+
+    #name-small {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    #name-small>pre {
+        margin: 0;
+    }
+
+    #tux {
+        position: static;
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    footer {
+        position: static;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        min-height: 50px;
+    }
+}
