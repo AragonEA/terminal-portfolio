@@ -1,3 +1,34 @@
+
+function initialize(){
+    setUpModal('projects');
+    setUpModal('contact');
+    setUpModal('about');
+    
+}
+
+initialize();
+
+function setUpModal(modalName) {
+    const modal = document.querySelector(`#${modalName}Modal`)
+    const btn = document.querySelector(`#${modalName}Btn`);
+    const span = document.querySelector(`#${modalName}Span`);
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+}
+
+window.onclick = function (event) {
+    if (event.target.classList == 'modal') {
+        event.target.style.display = "none";
+    }
+}
+
+
 // Cursor Animation
 const cursor = document.querySelector('.cursor');
 
