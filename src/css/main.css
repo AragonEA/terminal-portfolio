@@ -5,7 +5,10 @@
     --primary-solid: #242424;
     --primary-700: rgba(36, 36, 36, 0.7);
     --dark-bg-color: #000000;
+    --primary-font-color: #ffffff;
+    --primary-font-700: rgba(255, 255, 255, 0.7);
     --console-font-color: #D0CFCC;
+
 
 }
 
@@ -32,6 +35,8 @@ header>p {
     margin: 0;
 }
 
+
+
 .console {
     margin: 0 2vw 0 2vw;
     margin-top: 2vh;
@@ -48,6 +53,11 @@ header>p {
 
 #name-small {
     display: none;
+}
+
+#ascii-art {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #tux {
