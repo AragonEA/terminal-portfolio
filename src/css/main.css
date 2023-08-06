@@ -123,6 +123,21 @@ width: 100%;
     text-decoration: none;
 }
 
+.info-section{
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 25vh;
+}
+
+.info-link{
+    text-decoration-color: var(--primary-font-700);
+    color: inherit;
+}
+.info-title{
+    text-align: start;
+}
+
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
 
@@ -142,6 +157,10 @@ width: 100%;
 
     #name-small>pre {
         margin: 0;
+    }
+
+    .info-section{
+        flex-wrap: wrap;
     }
 }
 
