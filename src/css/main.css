@@ -13,29 +13,23 @@
 }
 
 body {
-    font-family: monospace;
     background-color: var(--dark-bg-color);
+    font-family: monospace;
     font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
 }
 
 header {
     background-color: var(--primary-solid);
     color: white;
+    text-align: center;
+    font-weight: bold;
     border-radius: 10px 10px 0px 0px;
     height: 4.5vh;
     min-height: 40px;
-    text-align: center;
-    font-weight: bold;
 }
 
 header>p {
@@ -43,7 +37,11 @@ header>p {
     margin: 0;
 }
 
-
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
 
 .console {
     margin: 0 2vw 0 2vw;
@@ -87,74 +85,7 @@ footer>a {
     align-items: flex-end;
 }
 
-
-.projects-section {
-    text-align: center;
-    padding: 2rem 2rem;
-}
-
-.projects-section-header {
-    border-bottom: 0.1rem solid var(--primary-font-color);
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    margin-bottom: 25px;
-}
-
-.project {
-    background: var(--primary-solid);
-    border-radius: 10px;
-    padding: 15px;
-    text-decoration-color: var(--primary-font-color);
-}
-
-.project-title:hover {
-    color: var(--primary-font-700);
-}
-
-.project-image {
-    height: 200px;
-    border-radius: 10%;
-    width: 100%;
-}
-
-.project-title {
-    font-size: 2rem;
-    color: var(--primary-font-color);
-}
-
-.btn-show-all {
-    color: var(--primary-font-color);
-    border: 1px solid var(--primary-font-color);
-    padding: 2px;
-    text-decoration: none;
-}
-
-.info-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 25vh;
-}
-
-.info-link {
-    text-decoration-color: var(--primary-font-700);
-    color: inherit;
-}
-
-.info-title {
-    text-align: start;
-}
-
-
 @media only screen and (min-width: 0px) and (max-width: 900px) {
-
-    .cursor {
-        display: none !important;
-    }
 
     #name-big {
         display: none;
@@ -168,9 +99,5 @@ footer>a {
 
     #name-small>pre {
         margin: 0;
-    }
-
-    .info-section {
-        flex-wrap: wrap;
     }
 }
